@@ -1,0 +1,9 @@
+qdrant-client
+transformers
+pandas
+numpy
+torch
+tqdm
+openpyxl
+fastapi
+uvicorn[standard]
