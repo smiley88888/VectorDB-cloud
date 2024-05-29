@@ -10,7 +10,7 @@ $params = array(
 );
 
 // Create URL with parameters
-$url = $base_url . "/insert.py?" . http_build_query($params);
+$url = $base_url . "/insert?" . http_build_query($params);
 
 // Initialize cURL session
 $ch = curl_init();

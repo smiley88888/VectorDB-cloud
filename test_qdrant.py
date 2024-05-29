@@ -10,6 +10,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import PointStruct, Distance, VectorParams, InitFrom
 import sys
 import uuid
+import config
 
 
 def get_data():
@@ -84,7 +85,7 @@ def main():
     index_v3_name = "EverGrowingVDBTestV3"
     emb_size = 384
 
-    client = QdrantClient(host="localhost", port=6333)
+    client = QdrantClient(url=config["QDRANT_URL"], api_key=config["QDRANT_API_KEY"])
     existing_indexes = [index.name for index in client.get_collections().collections]
     print("Existing Indexes:", existing_indexes)
 
