@@ -1,7 +1,9 @@
+# files
 .env.local
 
 
 # directories
+__pycache__
 myenv
 files
 legacy
