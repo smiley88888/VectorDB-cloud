@@ -1,6 +1,6 @@
 # files
 .env.local
-
+git_repos.bat
 
 # directories
 __pycache__
